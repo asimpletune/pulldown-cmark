@@ -743,3 +743,16 @@ impl Options {
         self.contains(Options::ENABLE_FOOTNOTES) && !self.contains(Options::ENABLE_OLD_FOOTNOTES)
     }
 }
+
+use wasm_bindgen::prelude::*;
+
+/// TODO
+#[wasm_bindgen]
+pub fn md_to_html(text: String) -> String {
+  let parser = Parser::new(&text);
+
+  // Write to a new String buffer.
+  let mut html_output = String::new();
+  html::push_html(&mut html_output, parser);
+  return html_output
+}

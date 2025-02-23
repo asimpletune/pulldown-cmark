@@ -1,0 +1,25 @@
+{
+  "name": "pulldown-cmark-node",
+  "collaborators": [
+    "Raph Levien <raph.levien@gmail.com>",
+    "Marcus Klaas de Vries <mail@marcusklaas.nl>"
+  ],
+  "description": "A pull parser for CommonMark",
+  "version": "0.13.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raphlinus/pulldown-cmark"
+  },
+  "files": [
+    "pulldown_cmark_bg.wasm",
+    "pulldown_cmark.js",
+    "pulldown_cmark.d.ts"
+  ],
+  "main": "pulldown_cmark.js",
+  "types": "pulldown_cmark.d.ts",
+  "keywords": [
+    "markdown",
+    "commonmark"
+  ]
+}
